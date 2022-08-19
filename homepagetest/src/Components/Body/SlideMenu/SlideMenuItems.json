@@ -1,0 +1,20 @@
+{
+ "SlideMenuItem" : [
+   {
+      "name" : "Login",
+      "contenturl" : "/Login"
+   },
+   {
+      "name" : "Proxy check",
+      "contenturl" : "/reactProxy"
+   },
+   {
+      "name" : "board List",
+      "contenturl" : "/board"
+   },
+   {
+      "name" : "aaa4",
+      "contenturl" : "/Login"
+   }
+ ]
+}

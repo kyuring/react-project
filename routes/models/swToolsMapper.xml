@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="swToolsMapper">
+    <select id="selectSwToolsList">
+        select 
+            swt_code
+            ,   swt_toolname
+            ,   swt_function
+            ,   swt_imagepath
+            ,   swt_big_imgpath
+            ,   swt_comments
+            ,   swt_demo_site
+            ,   swt_manual_path
+            ,   swt_github_url
+            ,   end_date
+            ,   reg_date
+            ,   reg_user
+            ,   update_date
+            ,   update_user
+        from react.react_swtool
+        <if test="swt_code" != null && swt_code != '' >
+            where swt_code = #{swt_code}
+        </if>
+        order by end_date desc
+    </select>
+    <insert id="insertBoard">
+        insert into react.react_swtool(
+            swt_code
+            ,   swt_toolname
+            ,   swt_function
+            <if test="is_LabeImg" != null && is_LabeImg != ''>
+            ,   swt_imagepath
+            </if>
+            <if test="is_MainImg" != null && is_MainImg != ''>
+            ,   swt_big_imgpath
+            </if> 
+            ,   swt_comments
+            ,   swt_demo_site
+            <if test="is_ManualName" != null && is_ManualName != ''>
+            ,   swt_manual_path
+            </if> 
+            ,   swt_github_url
+            ,   end_date
+            ,   reg_date
+            ,   reg_user
+            ,   update_date
+            ,   update_user
+        ) values (
+            concat('USW', date_format(now(), '%Y%m%d%H%i%s'))
+            ,   #{is_swt_toolname}
+            ,   #{is_swt_function}
+            <if test="is_LabeImg" != null && is_LabeImg != ''>
+            ,   #{is_LabeImg}
+            </if>
+            <if test="is_MainImg" != null && is_MainImg != ''>
+            ,   #{is_MainImg}
+            </if> 
+            ,   #{is_swt_comments}
+            ,   #{is_swt_demo_site}
+            <if test="is_ManualName" != null && is_ManualName != ''>
+            ,   #{is_ManualName}
+            </if> 
+            ,   #{is_swt_github_url}
+            ,   #{is_end_date}
+            ,   date_format(now(), '%Y%m%d%H%i%s')
+            ,   #{is_Email}
+            ,   date_format(now(), '%Y%m%d%H%i%s')
+            ,   #{is_Email}  
+        )
+    </insert>
+    <update id="updateBoard">
+        update react.react_swtool set 
+        swt_toolname =  #{is_swt_toolname}
+        , swt_function = #{is_swt_function}
+        , swt_imagepath = #{is_LabeImg}
+        , swt_big_imgpath = #{is_MainImg}
+        , swt_comments = #{is_swt_comments}
+        , swt_demo_site = #{is_swt_demo_site}
+        , swt_manual_path = #{is_swt_demo_site}
+        , swt_github_url = #{is_swt_github_url}
+        , end_date = #{is_end_date}
+        , reg_date = date_format(now(), '%Y%m%d%H%i%s')
+        , reg_user = #{is_Email}       
+        where swt_code = #{swt_code}
+    </update>
+    <delete id="deleteBoard">
+        delete from react.react_swtool
+        where swt_code = #{swt_code}
+    </delete>
+</mapper>

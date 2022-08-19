@@ -1,0 +1,173 @@
+/********************************Board List Css**************************************************/
+.BoardListCardContiner {
+    /* background-color: #ffffff; */
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    display: inline-block;
+    text-align: center;
+}
+.BoardListCardContiner::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.boardCard{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    min-width: 300px;
+    padding: 10px;
+    width: 30%;
+    float: left;
+    height: 250px;
+    background-color: #80CED7;
+    box-shadow: 3px 5px 10px -2px #00171f88;
+    border-radius : 10px / 10px;
+    cursor: pointer;
+}
+.boardCardAfter{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    min-width: 300px;
+    padding: 10px;
+    width: 30%;
+    float: left;
+    height: 250px;
+    background-color: #B0BFBF;
+    border-radius : 10px / 10px;
+    box-shadow: 3px 5px 10px -2px #00171f88;
+    cursor: pointer;
+}
+.boardCardAdd{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    min-width: 300px;
+    padding: 10px;
+    width: 30%;
+    float: left;
+    height: 250px;
+    background-color: #80CED7;
+    box-shadow: 3px 5px 10px -2px #00171f88;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 8rem;
+    font-weight: bold;
+    border-radius : 10px / 10px;
+}
+.boardCard:hover, .boardCardAfter:hover, .boardCardAdd:hover{
+    background-color: #007EA7;
+    color: #ffffff;
+}
+.boardCardTitle {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 30%;
+}
+.boardCardInfo {
+    text-align: end;
+    padding-top: 10%;
+    display: block;
+}
+.boardCardInfo > p {
+    margin: 0;
+}
+
+/***********************************Board Save Css***********************************************/
+.BoardTitle {
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+    width: 100%;
+    border-left: 5px solid #9AD1D4;
+}
+.BoardTitle > p {
+    font-size: 1.5rem;
+}
+.BoardForm {
+    font-size: 1rem;
+    margin: 2rem;
+    text-align: left;
+}
+.BoradFormLineSet{
+    height: 100px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.BoardFormLabel {
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.BoardFormInput{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #E7EEEE;
+    outline: none;
+}
+.BoardFormInput:focus{
+    border-bottom: 2px solid #9AD1D4;
+    outline: none;
+}
+.BoradFormLineSet:focus-within  {
+    border-left: 3px solid #007EA7;
+}
+.btn{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+}
+.cancelBtn, .pdfBtn {
+    width: 25%;
+    max-width: 300px;
+    height: 50px;
+    background-color: #9AD1D4;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1%;
+    padding-top: 10px;
+    color: white;
+}
+.pdfBtn {
+    width: 25%;
+    max-width: 300px;
+    height: 50px;
+    background-color: #006B8F;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 10px;
+    margin-left: 1%;
+    margin-right: 0;
+    color: white;
+}
+.cancelBtn:hover, .saveBtn:hover, .modifyBtn:hover, .pdfBtn:hover{
+    background-color: #B0BFBF;
+    color: white;
+}
+.saveBtn, .modifyBtn {
+    width: 25%;
+    height: 50px;
+    max-width: 300px;
+    background-color: #006B8F;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 10px;
+    color: white;
+}

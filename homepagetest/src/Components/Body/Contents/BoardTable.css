@@ -1,0 +1,31 @@
+.BoardTableAria {
+    padding: 20px;
+    background-color: white;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+table > thead {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    margin: 50px;
+}
+table > tbody > tr {
+    padding : 20px;
+    height: 50px;
+    
+}
+table > tbody > tr > th {
+    border: 1px solid black;
+    width: 20%;
+    background-color: #ebebeb;
+}
+table > tbody > tr > td {
+    border: 1px solid black;
+    width: auto;
+}

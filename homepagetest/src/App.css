@@ -1,0 +1,19 @@
+.AppContainer {
+    width: 100%;
+    height: 100vh;
+}
+/* 공통 */
+a {
+    text-decoration: none;
+    color: #000F14;
+}
+html {
+    color: #000F14;
+    -ms-overflow-style: none; /* IE and Edge */
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+li {
+    list-style: none;   
+}

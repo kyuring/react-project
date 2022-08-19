@@ -1,0 +1,26 @@
+.BodyContainer{
+    margin: 0;
+    height:calc(100vh - 60px);
+    display: flex;
+}
+.TopSlideMenuBar{
+    display: none;
+}
+
+@media (max-width : 1080px) 
+{
+    .BodyContainer{
+        margin: 0;
+        height:calc(100vh - 60px);
+        display: block;
+    }
+    .SlideMenuBar{
+        display: none;
+    }
+    .TopSlideMenuBar{
+        display: block;
+    }
+    .ContentsContiner {
+        display: none;
+    }
+}

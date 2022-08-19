@@ -1,0 +1,104 @@
+.SlideMenuBar{
+    width: 300px;
+    height: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    background-color: #E7EEEE;
+    border-right: 1px solid #9AD1D4;
+}
+/* scroll 보이는거 지우기 */
+.SlideMenuBar::-webkit-scrollbar{
+    display: none;
+}
+
+/* SlideMenuList */
+.SlideMenuList{
+    padding: 0px;
+}
+
+/* 내정보 간략히 */
+.SlideMenuItemMyPage{
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid #9AD1D4;
+    text-align: center;
+    list-style: none;
+    padding: 8px 0px;
+    background-color: white;
+}
+
+.SlideMenuItemMyPageText > p {
+    font-weight: bold;
+    color:darkblue;
+    margin: 5px;
+}
+
+.SlideMenuItemMyPage > img{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    margin-top: 15px;
+    border-radius: 50%; /* div 둥글게 설정 */
+    object-fit: cover; /* 이미지가 사이즈 일정하게 들어가기 위해 사용 */
+}
+
+/* SlideMenuItem에 관한 리스트 */
+.SlideMenuItem{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #9AD1D4;
+    text-align: center;
+    list-style: none;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.SlideMenuItem:hover{
+    background-color: #9AD1D4;
+    color: white;
+}
+
+@media (max-width : 1080px) 
+{
+    .TopSlideMenuBarTitle{
+        display: block;
+        padding: 20px 0px;
+        height: 200px;
+        width: 100%;
+        border-bottom: 2px solid #9AD1D4;
+        text-align: center;
+    }
+    
+    .TopSlideMenuBarTitle > img{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%; /* div 둥글게 설정 */
+        object-fit: cover; /* 이미지가 사이즈 일정하게 들어가기 위해 사용 */
+    }
+    .TopSlideMenuBarItems{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        background-color: #E7EEEE;
+    }
+    .TopSlideMenuBarItems::-webkit-scrollbar{
+        display: none;
+    }
+    .TopSlideMenuBarItems > ul{
+        padding: 0;
+        margin: 0;
+    }
+    .TopSlideMenuBarItems > ul > li{
+        height: 60px;
+        width: 100%;
+        list-style: none;
+        background-color: #E7EEEE;
+        border-bottom: 1px solid #9AD1D4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

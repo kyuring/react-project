@@ -1,0 +1,74 @@
+.ContentsContiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginContainer{
+    width: 500px;
+    height: 350px;
+    border-radius : 10px / 10px;
+    box-shadow: 3px 5px 10px -2px #00171f88;
+}
+.login_type{
+    width: 100%;
+    height: 50px;
+    border-radius : 10px 10px 0 0/ 10px;
+}
+.login_type input[type="radio"] {
+    display: none;
+}
+.login_type_label{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 2%;
+    border-radius : 10px 10px 0 0/ 10px;
+    border-top: 2px solid transparent;
+}
+.login_type_label:hover,
+.login_type_label:active{
+    background-color: #DAE4E5;
+}
+.login_type_label_check{
+    background-color: #E7EEEE;
+}
+
+/**************************** LoginForm**************************************/
+.LoginForm{
+    width: 100%;
+    height: 100%;
+    border-radius : 0 0 10px 10px / 10px;
+    /* border-bottom: 2px solid #007EA7;
+    border-left: 2px solid #007EA7;
+    border-right: 2px solid #007EA7; */
+} 
+.form_box{
+    width: 100%;
+    height: 300px;
+    background-color: #E7EEEE;
+    padding: 30px 50px;
+    border-radius : 0 0 10px 10px / 10px;
+}
+.box_input{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 0px #00171f88;
+}
+.btn_Login {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9AD1D4;
+    box-shadow: 1px 1px 1px 0px #00171f88;
+}
+.btn_Login:hover {
+    background-color: #006B8F;
+}

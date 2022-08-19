@@ -1,0 +1,59 @@
+{
+    "BoardFormItems" : [
+      {
+         "id" : "swt_code",
+         "label" : "",
+         "value" : "swt_code"
+      },
+      {
+        "id" : "is_Email",
+        "label" : "",
+        "value" : "reg_user"
+     },
+     {
+        "id" : "is_swt_toolname",
+        "label" : "툴이름",
+        "value" : "swt_toolname"
+     },
+     {
+        "id" : "is_swt_function",
+        "label" : "툴기능",
+        "value" : "swt_function"
+     },
+     {
+        "id" : "is_LabeImg",
+        "label" : "툴 이미지",
+        "value" : "swt_imagepath"
+     },
+     {
+        "id" : "is_MainImg",
+        "label" : "툴 메인 이미지",
+        "value" : "swt_big_imgpath"
+     },
+     {
+        "id" : "is_swt_demo_site",
+        "label" : "툴 사이트",
+        "value" : "swt_demo_site"
+     },
+     {
+        "id" : "is_ManualName",
+        "label" : "툴 매뉴얼",
+        "value" : "swt_manual_path"
+     },
+     {
+        "id" : "is_swt_comments",
+        "label" : "툴 설명",
+        "value" : "swt_comments"
+     },
+     {
+        "id" : "is_swt_github_url",
+        "label" : "Git 주소",
+        "value" : "swt_github_url"
+     },
+     {
+        "id" : "is_end_date",
+        "label" : "마감일",
+        "value" : "end_date"
+     }
+    ]
+   }
