@@ -1,6 +1,6 @@
 var express = require('express');
 
-// 라우터 정의
+// 라우터 정의 - kyuri
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var swtoolRouter = require('./routes/swtoolrout');
